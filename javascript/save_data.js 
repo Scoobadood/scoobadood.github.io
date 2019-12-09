@@ -2,7 +2,7 @@ function save_data(data) {
 	const response = await fetch('http://example.com/movies.json');
 	const myJson = await response.json();
 	console.log(JSON.stringify(myJson));
-	
+
 // 	PUT /Key+ HTTP/1.1
 // Host: Bucket.s3.amazonaws.com
 // x-amz-acl: ACL
@@ -33,4 +33,23 @@ function save_data(data) {
 // x-amz-object-lock-legal-hold: ObjectLockLegalHoldStatus
 
 // Body
+}
+
+async function save_data_2() {
+	const url = 'https://s3-ap-southeast-2.amazonaws.com/org.nbi/dave/image_160.jpg';
+	const data = { username: 'example' };
+
+	try {
+	  const response = await fetch(url, {
+	    method: 'POST', // or 'PUT'
+	    body: JSON.stringify(data), // data can be `string` or {object}!
+	    headers: {
+	      'Content-Type': 'application/json'
+	    }
+	  });
+	  const json = await response.json();
+	  console.log('Success:', JSON.stringify(json));
+	} catch (error) {
+	  console.error('Error:', error);
+	}
 }
