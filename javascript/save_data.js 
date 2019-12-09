@@ -35,9 +35,8 @@ function save_data(data) {
 // Body
 }
 
-async function save_data_2() {
+async function save_data_2(data) {
 	const url = 'https://s3-ap-southeast-2.amazonaws.com/org.nbi/dave/image_160.jpg';
-	const data = { username: 'example' };
 
 	try {
 	  const response = await fetch(url, {
