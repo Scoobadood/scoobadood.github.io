@@ -35,7 +35,7 @@ function save_data(data) {
 // Body
 }
 
-function save_data_2(data) {
+export function save_data_2(data) {
 	const url = 'https://s3-ap-southeast-2.amazonaws.com/org.nbi/dave/image_160.jpg';
 
 	try {
