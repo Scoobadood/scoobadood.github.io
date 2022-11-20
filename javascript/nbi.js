@@ -42,10 +42,10 @@ function add_dogs() {
 		overlay.className='dog-card-overlay'
 		var span1 = document.createElement('span')
 		span1.className='dog-card-overlay-name'
-		span1.innerText=dog.Name
+		span1.textContent=dog.Name
 		var span2 = document.createElement('span')
 		span2.className='dog-card-overlay-likes'
-		span2.innerText=dog.Likes
+		span2.textContent=dog.Likes
 
 
 		var owner_overlay = document.createElement('div')
@@ -57,7 +57,7 @@ function add_dogs() {
 
 		var owner_name_div = document.createElement('div')
 		owner_name_div.className='dog-card-owner-name'
-		owner_name_div.innerText=dog.Owner
+		owner_name_div.textContent=dog.Owner
 		owner_overlay.append(owner_name_div)
 
 	    article.append(body)
