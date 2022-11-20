@@ -26,37 +26,37 @@ function add_dogs() {
 	for (var di =0; di < dogs.length; di = di+1) {
 		dog = dogs[di]
 		var article = document.createElement('article')
-		article.class='dog-card'
+		article.className='dog-card'
 
 
 
 		var body = document.createElement('div')
-		body.class='dog-card-body'
+		body.className='dog-card-body'
 		var img = document.createElement('img')
-		img.class='dog-card-dog-image'
+		img.className='dog-card-dog-image'
 		img.src='images/'+ dog.Image
 		body.append(img)
 
 
 		var overlay = document.createElement('div')
-		overlay.class='dog-card-overlay'
+		overlay.className='dog-card-overlay'
 		var span1 = document.createElement('span')
-		span1.class='dog-card-overlay-name'
+		span1.className='dog-card-overlay-name'
 		span1.innerText=dog.Name
 		var span2 = document.createElement('span')
-		span2.class='dog-card-overlay-likes'
+		span2.className='dog-card-overlay-likes'
 		span2.innerText=dog.Likes
 
 
 		var owner_overlay = document.createElement('div')
-		owner_overlay.class=['dog-card-overlay', 'fade-in']
+		owner_overlay.className=['dog-card-overlay', 'fade-in']
 		var avatar_img = document.createElement('div')
-		avatar_img.class='dog-card-owner-avatar'
+		avatar_img.className='dog-card-owner-avatar'
 		avatar_img.src='images/avatar.png'
 		owner_overlay.append(avatar_img)
 
 		var owner_name_div = document.createElement('div')
-		owner_name_div.class='dog-card-owner-name'
+		owner_name_div.className='dog-card-owner-name'
 		owner_name_div.innerText=dog.Owner
 		owner_overlay.append(owner_name_div)
 
