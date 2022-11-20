@@ -1,0 +1,100 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+grid {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: lightgray;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+article {
+    max-width: 350px;
+    aspect-ratio: 0.8;
+    position: relative;
+    box-shadow: 2px 2px 5px darkgray;
+    border: 1px solid black;
+    overflow-y: hidden;
+}
+
+.dog-card-body {
+    align-content: center;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dog-card-body img {
+    max-height: 100%;
+    display: block;
+}
+
+.dog-card-overlay {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background-color: black;
+    opacity: 70%;
+    width: 100%;
+    color: antiquewhite;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24pt;
+    font-weight: 800;
+    padding: 5px 0;
+    top: -80px;
+    transition: top 0.5s ease;
+
+}
+
+.dog-card-overlay-likes {
+    font-size: 14pt;
+    font-weight: 200;
+}
+
+.dog-card-overlay-likes::after {
+    content: "♥️";
+}
+
+/* Owner */
+.dog-card-owner-overlay {
+    background-color: darkblue;
+    opacity: 70%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: -60px;
+    transition: bottom 0.5s ease;
+}
+
+.dog-card-owner-avatar {
+    border-radius: 50%;
+    max-height: 40px;
+    margin-left: 10px;
+}
+
+.dog-card-owner-name {
+    color: antiquewhite;
+    font-family: sans-serif;
+    font-weight: 200;
+    font-size: 14pt;
+    padding: 0;
+    margin-left: 10px;
+}
+
+article:hover > .dog-card-owner-overlay{
+     bottom: 0px; 
+}
+
+article:hover > .dog-card-overlay{
+    top: 0px; 
+}
