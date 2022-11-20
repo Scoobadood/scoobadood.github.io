@@ -2,7 +2,26 @@ function add_dogs() {
 	var posts = document.getElementById('posts')
 	var grid = document.createElement('grid')
 
-	var dogs=['pooch']
+	var dogs=[
+	{
+		'Name': 'Pooch',
+		'Owner': 'Dave',
+		'Likes': 12,
+		'Image': 'pooch.png'
+	},
+	{
+		'Name': 'Pooch',
+		'Owner': 'Dave',
+		'Likes': 12,
+		'Image': 'pooch.png'
+	},
+	{
+		'Name': 'Pooch',
+		'Owner': 'Dave',
+		'Likes': 12,
+		'Image': 'pooch.png'
+	},
+	]
 
 	for (dog in dogs) {
 		var article = document.createElement('article')
@@ -14,33 +33,31 @@ function add_dogs() {
 		body.class='dog-card-body'
 		var img = document.createElement('img')
 		img.class='dog-card-dog-image'
-		img.src='images/dog1.png'
+		img.src='images/'+dog.Image
 		body.append(img)
-
 
 
 		var overlay = document.createElement('div')
 		overlay.class='dog-card-overlay'
+		var span1 = document.createElement('span')
+		span1.class='dog-card-overlay-name'
+		span1.innerText=dog.Name
+		var span2 = document.createElement('span')
+		span2.class='dog-card-overlay-likes'
+		span2.innerText=dog.Likes
+
 
 		var owner_overlay = document.createElement('div')
 		owner_overlay.class=['dog-card-overlay', 'fade-in']
+		var avatar_img = document.createElement('div')
+		avatar_img.class='dog-card-owner-avatar'
+		avatar_img.src='images/avatar.png'
+		owner_overlay.append(avatar_img)
 
-
-
-
-	            // <div class="">
-	            //     <img class="dog-card-dog-image" src="../images/dog1.png" />
-	            // </div>
-
-	            // <div class="dog-card-overlay">
-	            //     <span class="dog-card-overlay-name">Pupstar</span>
-	            //     <span class="dog-card-overlay-likes">10</span>
-	            // </div>
-
-	            // <div class="dog-card-owner-overlay fade-in">
-	            //     <img class="dog-card-owner-avatar" src="../images/avatar.png"/>
-	            //     <div class="dog-card-owner-name">Dave</div>
-	            // </div>
+		var owner_name_div = document.createElement('div')
+		owner_name_div.class='dog-card-owner-name'
+		owner_name_div.innerText=dog.Owner
+		owner_overlay.append(owner_name_div)
 
 	    article.append(body)
 	    article.append(overlay)
