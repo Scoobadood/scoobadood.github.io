@@ -1,7 +1,7 @@
 function fetch_dogs() {
 	fetch('https://scoobadood.github.io/data/dogs.json')
-  	.then((response) => response.text())
-  	.then((data) => consol.log(data));
+  	.then((response) => response.json())
+  	.then((data) => add_dogs(data));
 }
 
 function add_dogs(dogs) {
