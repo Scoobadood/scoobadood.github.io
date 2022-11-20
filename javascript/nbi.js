@@ -1,5 +1,5 @@
 function fetch_dogs() {
-	fetch('data/dogs.json')
+	fetch('https://scoobadood.github.io/data/dogs.json')
   	.then((response) => response.json())
   	.then((data) => add_dogs(data));
 }
