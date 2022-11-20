@@ -68,9 +68,10 @@ function add_dogs() {
 		span.appendChild(text)
 		dog_overlay.appendChild(span)
 
+		// The Owner overlay
 		var owner_overlay = document.createElement('div')
 		owner_overlay.className='dog-card-owner-overlay fade-in'
-		var avatar_img = document.createElement('div')
+		var avatar_img = document.createElement('img')
 		avatar_img.className='dog-card-owner-avatar'
 		avatar_img.src='images/' + dog.OwnerImage
 		owner_overlay.appendChild(avatar_img)
