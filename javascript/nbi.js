@@ -23,7 +23,7 @@ function add_dogs() {
 	},
 	]
 
-	for (dog in dogs) {
+	for (var dog in dogs) {
 		var article = document.createElement('article')
 		article.class='dog-card'
 
