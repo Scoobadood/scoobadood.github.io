@@ -28,45 +28,45 @@ function add_dogs() {
 		var article = document.createElement('article')
 		article.className='dog-card'
 
-
-
-		var body = document.createElement('div')
-		body.className='dog-card-body'
+		// The image wrapping div
+		var image_wrapper = document.createElement('div')
+		image_wrapper.className='dog-card-body'
 		var img = document.createElement('img')
 		img.className='dog-card-dog-image'
 		img.src='images/'+ dog.Image
-		body.append(img)
+		image_wrapper.appendChild(img)
 
+		// The Dog overlay
+		var dog_overlay = document.createElement('div')
+		dog_overlay.className='dog-card-overlay'
+		var span = document.createElement('span')
+		span.className='dog-card-overlay-name'
+		var text = document.createTextNode(dog.Name)
+		span.appendChild(text)
+		dog_overlay.appendChild(span)
 
-		var overlay = document.createElement('div')
-		overlay.className='dog-card-overlay'
-		var span1 = document.createElement('span')
-		span1.className='dog-card-overlay-name'
-		var text = document.createTextNode(dog.Name);
-		span1.appendChild(text);
-
-		var span2 = document.createElement('span')
-		span2.className='dog-card-overlay-likes'
+		span = document.createElement('span')
+		span.className='dog-card-overlay-likes'
 		text =  document.createTextNode(dog.Likes);
-		span2.appendChild(text)
-
+		span.appendChild(text)
+		dog_overlay.appendChild(span)
 
 		var owner_overlay = document.createElement('div')
 		owner_overlay.className=['dog-card-overlay', 'fade-in']
 		var avatar_img = document.createElement('div')
 		avatar_img.className='dog-card-owner-avatar'
 		avatar_img.src='images/avatar.png'
-		owner_overlay.append(avatar_img)
+		owner_overlay.appendChild(avatar_img)
 
 		var owner_name_div = document.createElement('div')
 		owner_name_div.className='dog-card-owner-name'
 		text =  document.createTextNode(dog.Owner);
 		owner_name_div.appendChild(text)
-		owner_overlay.append(owner_name_div)
+		owner_overlay.appendChild(owner_name_div)
 
-	    article.append(body)
-	    article.append(overlay)
-	    article.append(owner_overlay)
+	    article.appendChild(image_wrapper)
+	    article.appendChild(dog_overlay)
+	    article.appendChild(owner_overlay)
 
 		grid.append(article)
 	}
