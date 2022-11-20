@@ -23,7 +23,8 @@ function add_dogs() {
 	},
 	]
 
-	for (var dog in dogs) {
+	for (var di =0; di < dogs.length; di = di+1) {
+		dog = dogs[di]
 		var article = document.createElement('article')
 		article.class='dog-card'
 
@@ -33,7 +34,7 @@ function add_dogs() {
 		body.class='dog-card-body'
 		var img = document.createElement('img')
 		img.class='dog-card-dog-image'
-		img.src='images/'+dog.Image
+		img.src='images/'+ dog.Image
 		body.append(img)
 
 
