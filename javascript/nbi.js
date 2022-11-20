@@ -13,7 +13,7 @@ function add_dogs() {
 		'Name': 'Hooch',
 		'Owner': 'Turner',
 		'Likes': 12,
-		'Image': 'hoch.webp'
+		'Image': 'hooch.webp'
 	},
 	{
 		'Name': 'Daisy',
@@ -25,7 +25,7 @@ function add_dogs() {
 		'Name': 'Beethoven',
 		'Owner': 'Ted',
 		'Likes': 9,
-		'Image': 'beethoven.webp'
+		'Image': 'beethoven.jpg'
 	},
 	{
 		'Name': 'Clifford',
