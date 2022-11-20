@@ -1,44 +1,12 @@
-function add_dogs() {
+function fetch_dogs() {
+	fetch('data/dogs.json')
+  	.then((response) => response.json())
+  	.then((data) => add_dogs(data));
+}
+
+function add_dogs(dogs) {
 	var posts = document.getElementById('posts')
 	var grid = document.createElement('grid')
-
-	var dogs=[
-	{
-		'Name': 'Lassie',
-		'Owner': 'Joe Carraclough',
-		'Likes': 8,
-		'Image': 'lassie.jpg',
-		'OwnerImage': 'joe.png',
-	},
-	{
-		'Name': 'Hooch',
-		'Owner': 'Scott Turner',
-		'Likes': 12,
-		'Image': 'hooch.webp',
-		'OwnerImage': 'turner.png',
-	},
-	{
-		'Name': 'Daisy',
-		'Owner': 'John Wick',
-		'Likes': 9,
-		'Image': 'daisy.webp',
-		'OwnerImage': 'wick.png',
-	},
-	{
-		'Name': 'Beethoven',
-		'Owner': 'Ted Newton',
-		'Likes': 9,
-		'Image': 'beethoven.jpg',
-		'OwnerImage': 'ted.png',
-	},
-	{
-		'Name': 'Clifford',
-		'Owner': 'Emily Elizabeth',
-		'Likes': 6,
-		'Image': 'clifford.jpeg',
-		'OwnerImage': 'emily.png',
-	},
-	]
 
 	for (var di =0; di < dogs.length; di = di+1) {
 		dog = dogs[di]
