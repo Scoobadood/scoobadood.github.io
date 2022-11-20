@@ -7,8 +7,16 @@ for (dog in dogs) {
 	var article = document.createElement('article')
 	article.class='dog-card'
 
+
+
 	var body = document.createElement('div')
 	body.class='dog-card-body'
+	var img = document.createElement('img')
+	img.class='dog-card-dog-image'
+	img.src='images/dog1.png'
+	body.append(img)
+
+
 
 	var overlay = document.createElement('div')
 	overlay.class='dog-card-overlay'
