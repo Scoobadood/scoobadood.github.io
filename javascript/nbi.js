@@ -5,33 +5,38 @@ function add_dogs() {
 	var dogs=[
 	{
 		'Name': 'Lassie',
-		'Owner': 'Gregory',
+		'Owner': 'Joe Carraclough',
 		'Likes': 8,
-		'Image': 'lassie.jpg'
+		'Image': 'lassie.jpg',
+		'OwnerImage': 'joe.png'
 	},
 	{
 		'Name': 'Hooch',
-		'Owner': 'Turner',
+		'Owner': 'Scott Turner',
 		'Likes': 12,
 		'Image': 'hooch.webp'
+		'OwnerImage': 'turner.png'
 	},
 	{
 		'Name': 'Daisy',
 		'Owner': 'John Wick',
 		'Likes': 9,
 		'Image': 'daisy.webp'
+		'OwnerImage': 'wick.png'
 	},
 	{
 		'Name': 'Beethoven',
-		'Owner': 'Ted',
+		'Owner': 'Ted Newton',
 		'Likes': 9,
 		'Image': 'beethoven.jpg'
+		'OwnerImage': 'ted.png'
 	},
 	{
 		'Name': 'Clifford',
-		'Owner': 'Emily',
+		'Owner': 'Emily Elizabeth',
 		'Likes': 6,
 		'Image': 'clifford.jpeg'
+		'OwnerImage': 'emily.png'
 	},
 	]
 
@@ -67,7 +72,7 @@ function add_dogs() {
 		owner_overlay.className='dog-card-owner-overlay fade-in'
 		var avatar_img = document.createElement('div')
 		avatar_img.className='dog-card-owner-avatar'
-		avatar_img.src='images/avatar.png'
+		avatar_img.src='images/' + dog.OwnerImage
 		owner_overlay.appendChild(avatar_img)
 
 		var owner_name_div = document.createElement('div')
