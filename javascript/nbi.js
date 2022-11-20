@@ -4,22 +4,34 @@ function add_dogs() {
 
 	var dogs=[
 	{
-		'Name': 'Pooch',
-		'Owner': 'Dave',
-		'Likes': 12,
-		'Image': 'pooch.png'
+		'Name': 'Lassie',
+		'Owner': 'Gregory',
+		'Likes': 8,
+		'Image': 'lassie.jpg'
 	},
 	{
-		'Name': 'Pooch',
-		'Owner': 'Dave',
+		'Name': 'Hooch',
+		'Owner': 'Turner',
 		'Likes': 12,
-		'Image': 'pooch.png'
+		'Image': 'hoch.webp'
 	},
 	{
-		'Name': 'Pooch',
-		'Owner': 'Dave',
-		'Likes': 12,
-		'Image': 'pooch.png'
+		'Name': 'Daisy',
+		'Owner': 'John Wick',
+		'Likes': 9,
+		'Image': 'daisy.webp'
+	},
+	{
+		'Name': 'Beethoven',
+		'Owner': 'Ted',
+		'Likes': 9,
+		'Image': 'beethoven.webp'
+	},
+	{
+		'Name': 'Clifford',
+		'Owner': 'Emily',
+		'Likes': 6,
+		'Image': 'clifford.jpeg'
 	},
 	]
 
