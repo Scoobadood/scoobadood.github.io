@@ -8,35 +8,35 @@ function add_dogs() {
 		'Owner': 'Joe Carraclough',
 		'Likes': 8,
 		'Image': 'lassie.jpg',
-		'OwnerImage': 'joe.png'
+		'OwnerImage': 'joe.png',
 	},
 	{
 		'Name': 'Hooch',
 		'Owner': 'Scott Turner',
 		'Likes': 12,
-		'Image': 'hooch.webp'
-		'OwnerImage': 'turner.png'
+		'Image': 'hooch.webp',
+		'OwnerImage': 'turner.png',
 	},
 	{
 		'Name': 'Daisy',
 		'Owner': 'John Wick',
 		'Likes': 9,
-		'Image': 'daisy.webp'
-		'OwnerImage': 'wick.png'
+		'Image': 'daisy.webp',
+		'OwnerImage': 'wick.png',
 	},
 	{
 		'Name': 'Beethoven',
 		'Owner': 'Ted Newton',
 		'Likes': 9,
-		'Image': 'beethoven.jpg'
-		'OwnerImage': 'ted.png'
+		'Image': 'beethoven.jpg',
+		'OwnerImage': 'ted.png',
 	},
 	{
 		'Name': 'Clifford',
 		'Owner': 'Emily Elizabeth',
 		'Likes': 6,
-		'Image': 'clifford.jpeg'
-		'OwnerImage': 'emily.png'
+		'Image': 'clifford.jpeg',
+		'OwnerImage': 'emily.png',
 	},
 	]
 
